@@ -27,3 +27,7 @@ sudo mkdir -p /nfs
 sudo mount -w -v -t nfs -o user=nfsuser1 192.168.1.1:/nfs /nfs
 ```
 *Replace the IP address with the IP address of your QNAP and the /nfs with the name of your share and mount point and the user name with your user*
+
+## For those running NFS on persistent volumes in Kubernetes with kubectl
+
+You will need to run the ```sudo apt install nfs-common``` on each node you wish to have access to the share.
